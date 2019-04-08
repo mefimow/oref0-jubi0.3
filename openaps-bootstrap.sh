@@ -29,6 +29,6 @@ ifdown wlan0; ifup wlan0
 sleep 10
 echo -ne "\nWifi SSID: "; iwgetid -r
 sleep 5
-curl https://raw.githubusercontent.com/Diadon81/oref0-jubi0.3/master/openaps-install.sh > /tmp/openaps-install.sh
+curl -k https://raw.githubusercontent.com/Diadon81/oref0-jubi0.3/master/openaps-install.sh > /tmp/openaps-install.sh
 bash /tmp/openaps-install.sh
 )
