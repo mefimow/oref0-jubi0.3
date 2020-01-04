@@ -44,7 +44,7 @@ sed -i "s/daily/hourly/g" /etc/logrotate.conf
 sed -i "s/#compress/compress/g" /etc/logrotate.conf
 mkdir -p ~/src
 curl -s https://raw.githubusercontent.com/Diadon81/oref0-jubi0.3/master/openaps-packages.sh | bash -
-cd ~/src && git clone git://github.com/openaps/oref0.git || (cd oref0 && git checkout master && git pull)
+cd ~/src && git clone git://github.com/openaps/oref0.git || (cd oref0 && git checkout v0.6.3 && git pull)
 echo "Press Enter to run oref0-setup with the current release (master branch) of oref0,"
 read -p "or press ctrl-c to cancel. " -r
 cd && ~/src/oref0/bin/oref0-setup.sh
